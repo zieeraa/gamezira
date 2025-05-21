@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Materi H5P</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/styles/h5p.css"/>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    #h5p-container {
+      max-width: 960px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interaktif Materi H5P</h1>
+  <div id="h5p-container"></div>
+  <script src="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/main.bundle.js"></script>
+  <script>
+    const options = {
+      h5pJsonPath: 'materi.h5p',
+      frameJs: 'https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/frame.bundle.js',
+      frameCss: 'https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/styles/h5p.css'
+    };
+    new H5PStandalone.H5P(document.getElementById('h5p-container'), options);
+  </script>
+</body>
+</html>
