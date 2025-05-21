@@ -1,1 +1,0 @@
-// Dummy JS - download asli dari https://github.com/tunapanda/h5p-standalone
